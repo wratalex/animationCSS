@@ -1,0 +1,21 @@
+.square {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: spin 4s linear infinite, changeColor 6s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes changeColor {
+    0% { background: red; }
+    33% { background: green; }
+    66% { background: blue; }
+    100% { background: red; }
+}
